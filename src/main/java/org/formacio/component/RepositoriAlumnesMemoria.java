@@ -8,6 +8,8 @@ import java.util.Map;
  * A part del que sigui necessari per fer d'aquesta classe un component, no s'ha de 
  * modificar res mes d'aquesta classe
  */
+
+ @Component //Afegim component per a notació Spring
 public class RepositoriAlumnesMemoria implements RepositoriAlumnes {
 
 	private Map<Integer, String> bbdd = new HashMap<>();
