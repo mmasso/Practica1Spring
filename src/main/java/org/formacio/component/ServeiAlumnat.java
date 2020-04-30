@@ -20,4 +20,20 @@ public class ServeiAlumnat {
 			return true;}
 		return false;
 	}
+
+	@PostConstruct
+	public void initializator() {
+		this.inicialitzarRepositoriAlumnes();
+	}
+	
+	public void inicialitzarRepositoriAlumnes() {
+
+		final byte posicioRepositori = 1;
+		String[] alumnes = {"Antonia", "Joan"};
+
+		for (String alumne : alumnes) {
+			repositori.altaAlumne((int) posicioRepositori, alumne);
+			posicioRepositori += 1;
+		}
+	}
 }
