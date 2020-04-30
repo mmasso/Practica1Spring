@@ -36,4 +36,11 @@ public class ServeiAlumnat {
 			posicioRepositori += 1;
 		}
 	}
+
+
+
+	public int numeroAlumnesRepositori() {
+		return repositori.llistaAlumnes().size();
+	}
+
 }
